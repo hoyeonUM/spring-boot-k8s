@@ -4,7 +4,7 @@ https://www.docker.com/get-started
 2. kubernetes 활성화
 docker for window -> setting -> Enable Kubernetes 설정
 3. git pull https://github.com/hoyeonUM/spring-boot-k8s.git
-4. cd <work space>
+4. cd workspace
 5. deployment / service 설정
 kubectl apply -f .\kubernetes\deployment.yaml
 kubectl apply -f .\kubernetes\service.yaml
@@ -13,12 +13,12 @@ kubectl get service spring-boot-service -o wide
 
 
 ##### 도커파일 만들기
-1. cd <work space>
+1. cd workspace
 2. docker build ./ -t dus815/spring-boot-demo:<version>
 3. docker push dus815/spring-boot-demo:<version>
 
 ##### kubernates 대시보드 만들기
-1. cd <work space>
+1. cd workspace
 2. 대시보드 설정
 kubectl create -f .\kubernetes\dashboard.yaml
 3. 프록시 설정
